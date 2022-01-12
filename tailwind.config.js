@@ -16,11 +16,12 @@ module.exports = {
         7: "#D1DDEE",
         8: "rgba(0,0,0,0.5)",
         9: "rgba(0, 102, 245, 1)",
-        10: "#B4CAE7"
+        10: "#B4CAE7",
+        11: "#C95B39",
       },
       borderRadius: {
-        nubrad: "0px 0px 0px 8px"
-      }
+        nubrad: "0px 0px 0px 8px",
+      },
     },
   },
   plugins: [],

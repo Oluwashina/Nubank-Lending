@@ -4,3 +4,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.disabled-btn{
+    @apply opacity-50 pointer-events-none
+}
