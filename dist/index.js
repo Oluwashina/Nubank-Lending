@@ -1,5 +1,23 @@
 $(document).ready(function () {
 
+  // owl carousel init
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    items: 3,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 3,
+      },
+    },
+  });
 
 })
 
@@ -27,3 +45,4 @@ $('#planYes').click(function () {
 $("#seeStatus").click(function () {
   window.location.replace('application-success.html')
 })
+
