@@ -2,9 +2,7 @@ $(document).ready(function () {
 
   // get the occupation and income that user submitted
   var occupationCheck = localStorage.getItem("UserLoanRequest");
-  console.log(JSON.parse(occupationCheck));
   let occupationSubmitted = JSON.parse(occupationCheck).occupation;
-  console.log(occupationSubmitted);
 
   // check storage to see if occupation exist and the income selected from past users
 
@@ -14,14 +12,13 @@ $(document).ready(function () {
     //  find by occupation
     let plans = success.find((val) => val.occupation === occupationSubmitted);
     console.log(plans);
-    var occupation = plans.occupation;
     let plan = plans.plans;
+    let occupation = plan.occupation
     for (i = 0; i < plan.length; i++) {
       var amount = plan[i]["amount"];
       var interest = plan[i]["interest"];
-      var view_button = `planSelect(${amount},${interest},${i})`;
-      console.log(plan[0])
-      var planData
+      var view_button = `planSelect(${amount},${interest},${occupation})`;
+      var planData;
 
       if (i == 0) {
          planData = `
@@ -85,8 +82,10 @@ $('#planNo').click(function () {
    toastr.info("Kindly scroll to find a suitable plan that meets you!");
 })
 
-function planSelect(amt, interest, index) { 
+function planSelect(amt, interest) { 
   toastr.success("Thank you for applying!");
+  var occupationRequest = localStorage.getItem("UserLoanRequest");
+  let occupation = JSON.parse(occupationRequest).occupation;
   var view_data = new ViewData();
   view_data.storeUserDetails("plan_amount", amt);
   view_data.storeUserDetails("interest_value", interest);
@@ -95,7 +94,23 @@ function planSelect(amt, interest, index) {
     window.location.replace("loan-received.html");
     
     // save details to storage
-    
-  }, 3000)
+    var val = []
+    var data = {
+      occupation,
+      amount: amt,
+      interest
+    }
+    // check if occupation exist,
+    var res = localStorage.getItem('loan_applications')
+    if (res) {
+      const found = JSON.parse(res).some((el) => el.occupation === occupation);
+       val.push(data);
+       localStorage.setItem("loan_applications", JSON.stringify(val)); 
+    }
+    else {
+      val.push(data);
+      localStorage.setItem("loan_applications", JSON.stringify(val));      
+    }
+  }, 2000)
 
 }

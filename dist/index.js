@@ -93,5 +93,12 @@ $("form#seeloansBtn").submit(function (event) {
 
 // See application status functionality
 $("#seeStatus").click(function () {
-  window.location.replace("application-success.html");
+  var check = localStorage.getItem('loan_applications')
+  if (check) {
+   window.location.replace("application-success.html");
+  }
+  else {
+    toastr.info("You don't seem to have applied for any loan yet!");
+  }
+ 
 });
