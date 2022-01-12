@@ -1,0 +1,512 @@
+[ 
+    {
+        "id": 1,
+        "occupation": "Lawyer",
+        "plans": [
+          {
+              "amount": "50",
+              "interest": "5",
+              "plan": "A"
+          },
+           {
+              "amount": "100",
+              "interest": "10",
+              "plan": "B"
+          },
+           {
+              "amount": "150",
+              "interest": "12",
+              "plan": "C"
+          },
+             {
+              "amount": "200",
+              "interest": "15",
+              "plan": "D"
+          },
+             {
+              "amount": "250",
+              "interest": "12",
+              "plan": "E"
+          },
+             {
+              "amount": "300",
+              "interest": "12",
+              "plan": "F"
+          },
+             {
+              "amount": "350",
+              "interest": "12",
+              "plan": "G"
+          },
+             {
+              "amount": "400",
+              "interest": "12",
+              "plan": "H"
+          },
+             {
+              "amount": "450",
+              "interest": "20",
+              "plan": "I"
+          }
+        ]
+    },
+    {
+        "id": 2,
+        "occupation": "Teacher",
+        "plans": [
+          {
+              "amount": "15",
+              "interest": "5",
+              "plan": "A"
+          },
+           {
+              "amount": "30",
+              "interest": "10",
+              "plan": "B"
+          },
+           {
+              "amount": "50",
+              "interest": "12",
+              "plan": "C"
+          },
+             {
+              "amount": "100",
+              "interest": "15",
+              "plan": "D"
+          },
+             {
+              "amount": "150",
+              "interest": "12",
+              "plan": "E"
+          },
+             {
+              "amount": "200",
+              "interest": "12",
+              "plan": "F"
+          },
+             {
+              "amount": "250",
+              "interest": "12",
+              "plan": "G"
+          },
+             {
+              "amount": "300",
+              "interest": "12",
+              "plan": "H"
+          },
+             {
+              "amount": "350",
+              "interest": "20",
+              "plan": "I"
+          }
+        ]
+    },
+    {
+        "id": 3,
+        "occupation": "Software Developer",
+       "plans": [
+          {
+              "amount": "50",
+              "interest": "5",
+              "plan": "A"
+          },
+           {
+              "amount": "100",
+              "interest": "10",
+              "plan": "B"
+          },
+           {
+              "amount": "150",
+              "interest": "12",
+              "plan": "C"
+          },
+             {
+              "amount": "200",
+              "interest": "15",
+              "plan": "D"
+          },
+             {
+              "amount": "250",
+              "interest": "12",
+              "plan": "E"
+          },
+             {
+              "amount": "300",
+              "interest": "12",
+              "plan": "F"
+          },
+             {
+              "amount": "350",
+              "interest": "12",
+              "plan": "G"
+          },
+             {
+              "amount": "400",
+              "interest": "12",
+              "plan": "H"
+          },
+             {
+              "amount": "450",
+              "interest": "20",
+              "plan": "I"
+          }
+        ]
+    },
+     {
+         "id": 4,
+        "occupation": "University Lecturer",
+       "plans": [
+          {
+              "amount": "50",
+              "interest": "5",
+              "plan": "A"
+          },
+           {
+              "amount": "100",
+              "interest": "10",
+              "plan": "B"
+          },
+           {
+              "amount": "150",
+              "interest": "12",
+              "plan": "C"
+          },
+             {
+              "amount": "200",
+              "interest": "15",
+              "plan": "D"
+          },
+             {
+              "amount": "250",
+              "interest": "12",
+              "plan": "E"
+          },
+             {
+              "amount": "300",
+              "interest": "12",
+              "plan": "F"
+          },
+             {
+              "amount": "350",
+              "interest": "12",
+              "plan": "G"
+          },
+             {
+              "amount": "400",
+              "interest": "12",
+              "plan": "H"
+          },
+             {
+              "amount": "450",
+              "interest": "20",
+              "plan": "I"
+          }
+        ]
+    },
+     {
+         "id": 5,
+        "occupation": "Doctor",
+        "plans": [
+          {
+              "amount": "50",
+              "interest": "5",
+              "plan": "A"
+          },
+           {
+              "amount": "100",
+              "interest": "10",
+              "plan": "B"
+          },
+           {
+              "amount": "150",
+              "interest": "12",
+              "plan": "C"
+          },
+             {
+              "amount": "200",
+              "interest": "15",
+              "plan": "D"
+          },
+             {
+              "amount": "250",
+              "interest": "12",
+              "plan": "E"
+          },
+             {
+              "amount": "300",
+              "interest": "12",
+              "plan": "F"
+          },
+             {
+              "amount": "350",
+              "interest": "12",
+              "plan": "G"
+          },
+             {
+              "amount": "400",
+              "interest": "12",
+              "plan": "H"
+          },
+             {
+              "amount": "450",
+              "interest": "20",
+              "plan": "I"
+          }
+        ]
+    },
+     {
+         "id": 6,
+        "occupation": "Banker",
+         "plans": [
+          {
+              "amount": "50",
+              "interest": "5",
+              "plan": "A"
+          },
+           {
+              "amount": "100",
+              "interest": "10",
+              "plan": "B"
+          },
+           {
+              "amount": "150",
+              "interest": "12",
+              "plan": "C"
+          },
+             {
+              "amount": "200",
+              "interest": "15",
+              "plan": "D"
+          },
+             {
+              "amount": "250",
+              "interest": "12",
+              "plan": "E"
+          },
+             {
+              "amount": "300",
+              "interest": "12",
+              "plan": "F"
+          },
+             {
+              "amount": "350",
+              "interest": "12",
+              "plan": "G"
+          },
+             {
+              "amount": "400",
+              "interest": "12",
+              "plan": "H"
+          },
+             {
+              "amount": "450",
+              "interest": "20",
+              "plan": "I"
+          }
+        ]
+    },
+     {
+         "id": 7,
+        "occupation": "Management",
+        "plans": [
+          {
+              "amount": "50",
+              "interest": "5",
+              "plan": "A"
+          },
+           {
+              "amount": "100",
+              "interest": "10",
+              "plan": "B"
+          },
+           {
+              "amount": "150",
+              "interest": "12",
+              "plan": "C"
+          },
+             {
+              "amount": "200",
+              "interest": "15",
+              "plan": "D"
+          },
+             {
+              "amount": "250",
+              "interest": "12",
+              "plan": "E"
+          },
+             {
+              "amount": "300",
+              "interest": "12",
+              "plan": "F"
+          },
+             {
+              "amount": "350",
+              "interest": "12",
+              "plan": "G"
+          },
+             {
+              "amount": "400",
+              "interest": "12",
+              "plan": "H"
+          },
+             {
+              "amount": "450",
+              "interest": "20",
+              "plan": "I"
+          }
+        ]
+    },
+     {
+         "id":8,
+        "occupation": "Aviation Personnel",
+         "plans": [
+          {
+              "amount": "50",
+              "interest": "5",
+              "plan": "A"
+          },
+           {
+              "amount": "100",
+              "interest": "10",
+              "plan": "B"
+          },
+           {
+              "amount": "150",
+              "interest": "12",
+              "plan": "C"
+          },
+             {
+              "amount": "200",
+              "interest": "15",
+              "plan": "D"
+          },
+             {
+              "amount": "250",
+              "interest": "12",
+              "plan": "E"
+          },
+             {
+              "amount": "300",
+              "interest": "12",
+              "plan": "F"
+          },
+             {
+              "amount": "350",
+              "interest": "12",
+              "plan": "G"
+          },
+             {
+              "amount": "400",
+              "interest": "12",
+              "plan": "H"
+          },
+             {
+              "amount": "450",
+              "interest": "20",
+              "plan": "I"
+          }
+        ]
+    },
+     {
+         "id": 9,
+        "occupation": "IT Personnel",
+        "plans": [
+          {
+              "amount": "50",
+              "interest": "5",
+              "plan": "A"
+          },
+           {
+              "amount": "100",
+              "interest": "10",
+              "plan": "B"
+          },
+           {
+              "amount": "150",
+              "interest": "12",
+              "plan": "C"
+          },
+             {
+              "amount": "200",
+              "interest": "15",
+              "plan": "D"
+          },
+             {
+              "amount": "250",
+              "interest": "12",
+              "plan": "E"
+          },
+             {
+              "amount": "300",
+              "interest": "12",
+              "plan": "F"
+          },
+             {
+              "amount": "350",
+              "interest": "12",
+              "plan": "G"
+          },
+             {
+              "amount": "400",
+              "interest": "12",
+              "plan": "H"
+          },
+             {
+              "amount": "450",
+              "interest": "20",
+              "plan": "I"
+          }
+        ]
+    },
+     {
+         "id": 10,
+        "occupation": "Government worker",
+       "plans": [
+          {
+              "amount": "50",
+              "interest": "5",
+              "plan": "A"
+          },
+           {
+              "amount": "100",
+              "interest": "10",
+              "plan": "B"
+          },
+           {
+              "amount": "150",
+              "interest": "12",
+              "plan": "C"
+          },
+             {
+              "amount": "200",
+              "interest": "15",
+              "plan": "D"
+          },
+             {
+              "amount": "250",
+              "interest": "12",
+              "plan": "E"
+          },
+             {
+              "amount": "300",
+              "interest": "12",
+              "plan": "F"
+          },
+             {
+              "amount": "350",
+              "interest": "12",
+              "plan": "G"
+          },
+             {
+              "amount": "400",
+              "interest": "12",
+              "plan": "H"
+          },
+             {
+              "amount": "450",
+              "interest": "20",
+              "plan": "I"
+          }
+        ]
+    }
+]

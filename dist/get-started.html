@@ -70,8 +70,8 @@
                   id="occupation"
                   required
                 >  
-                <option selected disabled class="text-8">Pick an occupation</option>
-                  <option value="Ibadan">Lawyer</option>
+                <option selected disabled value="" class="text-8">Pick an occupation</option>
+                  <option value="Lawyer">Lawyer</option>
                   <option value="Teacher">Teacher</option>
                   <option value="Software Developer">Software Developer</option>
                   <option value="University Lecturer">University Lecturer</option>
@@ -107,12 +107,12 @@
                   id="income"
                   required
                 >  
-                <option selected disabled>Income</option>
-                  <option>Less than 50k</option>
-                  <option>50 - 150</option>
-                  <option>150 - 300</option>
-                  <option>300 - 500</option>
-                  <option>Greater than 500k</option>
+                <option selected disabled value="">Income</option>
+                  <option value="Less than 50k">Less than 50k</option>
+                  <option value="50k-150k">50k - 150k</option>
+                  <option value="150k-300k">150k - 300k</option>
+                  <option value="300k-500k">300k - 500k</option>
+                  <option value="Greater than 500k">Greater than 500k</option>
                 </select>
                 <div
                   class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
@@ -136,10 +136,7 @@
                   id="state"
                   required
                 >  
-                <option selected disabled>State</option>
-                  <option>Ekiti</option>
-                  <option>Lagos</option>
-                  <option>Osun</option>
+                <option value="" selected disabled>State</option>
                 </select>
                 <div
                   class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
@@ -164,9 +161,6 @@
                   required
                 >  
                 <option selected disabled>City</option>
-                  <option>Ibadan</option>
-                  <option>Ikeja</option>
-                  <option>Ile-Ife</option>
                 </select>
                 <div
                   class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"

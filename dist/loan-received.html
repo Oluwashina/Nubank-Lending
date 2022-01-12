@@ -25,10 +25,10 @@
       <!-- caption for application received -->
       <div class="flex justify-center items-center mt-24 md:mt-24">
           <div class="bg-9 w-52 h-40 md:w-56 md:h-44 flex items-center justify-center relative rounded-md">
-                <p class="text-white text-center text-3xl">15k</p>
+                <p class="text-white text-center text-3xl amount">15k</p>
 
                 <div class="absolute right-0 top-0 bg-10 w-16 h-12 md:w-16 md:h-12 rounded-nubrad flex justify-center items-center">
-                    <p class="text-xs text-black text-center font-medium leading-tight">5% Interest</p>
+                    <p class="text-xs text-black text-center font-medium leading-tight interest">5% Interest</p>
                 </div>
           </div>
       </div>
@@ -39,6 +39,26 @@
         </div>
 
      </div>
-    
+         <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+      <script src="./lib/jquery.cookie.js"></script>
+    <script src="./lib/view_data.js"></script>
+    <script>
+      $(document).ready(function () {
+
+        // check local storage/ cookies to see plan selected
+         var view_data = new ViewData();
+         var amount = view_data.getStoredUserDetail("plan_amount");
+         var interest = view_data.getStoredUserDetail("interest_value");
+
+        //  fill in value to display
+        $('.amount').text(`${amount}k`)
+        $('.interest').text(`${interest}% Interest`)
+
+
+      })
+    </script>
 </body>
 </html>

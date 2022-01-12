@@ -1,48 +1,97 @@
 $(document).ready(function () {
-
-  // owl carousel init
-  $(".owl-carousel").owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: false,
-    items: 3,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 3,
-      },
-      1000: {
-        items: 3,
-      },
+  // get all states api
+  var statesUrl = "http://locationsng-api.herokuapp.com/api/v1/states";
+  $.ajax({
+    url: statesUrl,
+    type: "GET",
+    dataType: "json",
+    data: false,
+    contentType: false,
+    cache: false,
+    processData: false,
+    beforeSend: function (jqXHR, settings) {},
+    success: function (data) {
+      for (i = 0; i < data.length; i++) {
+        var name = data[i]["name"];
+        $("select#state").append(
+          "<option value='" + name + "'>" + name + "</option>"
+        );
+      }
     },
+    complete: function (jqXHR) {},
   });
 
-})
+  // get all cities in a state
+  $("select#state").change(function () {
+    var state = $("select#state option:selected").val();
+    var cityUrl = `http://locationsng-api.herokuapp.com/api/v1/states/${state}/cities`;
+    $.ajax({
+      url: cityUrl,
+      type: "GET",
+      dataType: "json",
+      data: false,
+      contentType: false,
+      cache: false,
+      processData: false,
+      beforeSend: function (jqXHR, settings) {},
+      success: function (data) {
+        $('select#city').empty()
+        for (i = 0; i < data.length; i++) {
+          $("select#city").append(
+            "<option value='" + data[i] + "'>" + data[i] + "</option>"
+          );
+        }
+      },
+      complete: function (jqXHR) {},
+    });
+  });
+
+});
 
 // get started submission form
 $("form#seeloansBtn").submit(function (event) {
   event.preventDefault();
-    $("#loanSubmit").addClass("disabled-btn");
-    $("#spinner").removeClass("hidden").addClass("inline-flex");
+  $("#loanSubmit").addClass("disabled-btn");
+  $("#spinner").removeClass("hidden").addClass("inline-flex");
 
-   toastr.success("Details submitted!");
-  
+  let accountnumber = $('#accountnumber').val();
+  let firstname = $('#firstname').val();
+  let lastname = $('#lastname').val();
+  let occupation = $("select#occupation option:selected").val();
+  let income = $("select#income option:selected").val();
+  let state = $("select#state option:selected").val();
+  let city = $("select#city option:selected").val();
+  let purpose = $("#purpose").val();
+  let refName = $("#refname").val();
+  let phonenumber = $("#phonenumber").val();
+  let email = $("#email").val();
+
+  var data = {
+    accountnumber,
+    firstname,
+    lastname,
+    occupation,
+    income,
+    state,
+    city,
+    purpose,
+    refName,
+    phonenumber,
+    email
+  }
+
+  localStorage.setItem('UserLoanRequest', JSON.stringify(data))
+
+  toastr.success("Details submitted!");
+
   setTimeout(() => {
-      $("#loanSubmit").removeClass("disabled-btn");
+    $("#loanSubmit").removeClass("disabled-btn");
     $("#spinner").removeClass("inline-flex").addClass("hidden");
-    window.location.replace('plans.html')
-  }, 3000)
+    window.location.replace("plans.html");
+  }, 3000);
 });
-
-// plans button functionality
-$('#planYes').click(function () {
-  window.location.replace('loan-received.html')
-})
 
 // See application status functionality
 $("#seeStatus").click(function () {
-  window.location.replace('application-success.html')
-})
-
+  window.location.replace("application-success.html");
+});

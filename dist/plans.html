@@ -11,7 +11,23 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
-   
+.owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 20px;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #60A0FA;
+}
+.selected{
+    background: #0066F5;
+    border: none;
+    border-color: none;
+}
+.selected p{
+    color: white;
+}
+.selected .interest{
+    color: black;
+}
 </style>
 <body class="font-poppins bg-4">
     <div class="container mx-auto px-6 py-8 md:px-24">
@@ -30,64 +46,14 @@
 
       <!-- plans section -->
 
-       <div class="md:mt-20 mt-20 owl-carousel owl-theme md:max-w-4xl mx-auto">
+       <div class="md:mt-20 mt-20 owl-carousel owl-theme md:max-w-4xl mx-auto plan-section">
            
-         <div class="bg-9 w-52 item h-40 md:w-56 md:h-44 flex items-center justify-center relative rounded-md opacity-60 mx-auto md:mx-0">
-                <p class="text-white text-center text-3xl">15k</p>
-
-                <div class="absolute right-0 top-0 bg-10 w-16 h-12 md:w-16 md:h-12 rounded-nubrad flex justify-center items-center">
-                    <p class="text-xs text-black text-center font-medium leading-tight">5% Interest</p>
-                </div>
-          </div>
-
-            <div class="bg-6 w-52 h-40 item md:w-56 md:h-44 flex items-center justify-center relative rounded-md border-7 border opacity-60 mx-auto md:mx-0">
-                <p class="text-8 text-center text-3xl">30k</p>
-
-                <div class="absolute right-0 top-0 bg-10 w-16 h-12 md:w-16 md:h-12 rounded-nubrad flex justify-center items-center">
-                    <p class="text-xs text-black text-center font-medium leading-tight">7.5% Interest</p>
-                </div>
-          </div>
-
-            <div class="bg-6 w-52 h-40 item md:w-56 md:h-44 flex items-center justify-center relative rounded-md border-7 border opacity-60 mx-auto md:mx-0">
-                <p class="text-8 text-center text-3xl">50k</p>
-
-                <div class="absolute right-0 top-0 bg-10 w-16 h-12 md:w-16 md:h-12 rounded-nubrad flex justify-center items-center">
-                    <p class="text-xs text-black text-center font-medium leading-tight">10% Interest</p>
-                </div>
-          </div>
-           <div class="bg-6 w-52 h-40 item md:w-56 md:h-44 flex items-center justify-center relative rounded-md border-7 border opacity-60 mx-auto md:mx-0">
-                <p class="text-8 text-center text-3xl">100k</p>
-
-                <div class="absolute right-0 top-0 bg-10 w-16 h-12 md:w-16 md:h-12 rounded-nubrad flex justify-center items-center">
-                    <p class="text-xs text-black text-center font-medium leading-tight">12% Interest</p>
-                </div>
-          </div>
-           <div class="bg-6 w-52 h-40 item md:w-56 md:h-44 flex items-center justify-center relative rounded-md border-7 border opacity-60 mx-auto md:mx-0">
-                <p class="text-8 text-center text-3xl">200k</p>
-
-                <div class="absolute right-0 top-0 bg-10 w-16 h-12 md:w-16 md:h-12 rounded-nubrad flex justify-center items-center">
-                    <p class="text-xs text-black text-center font-medium leading-tight">15% Interest</p>
-                </div>
-          </div>
-            <div class="bg-6 w-52 h-40 item md:w-56 md:h-44 flex items-center justify-center relative rounded-md border-7 border opacity-60 mx-auto md:mx-0">
-                <p class="text-8 text-center text-3xl">250k</p>
-
-                <div class="absolute right-0 top-0 bg-10 w-16 h-12 md:w-16 md:h-12 rounded-nubrad flex justify-center items-center">
-                    <p class="text-xs text-black text-center font-medium leading-tight">15% Interest</p>
-                </div>
-          </div>
-            <div class="bg-6 w-52 h-40 item md:w-56 md:h-44 flex items-center justify-center relative rounded-md border-7 border opacity-60 mx-auto md:mx-0">
-                <p class="text-8 text-center text-3xl">400k</p>
-
-                <div class="absolute right-0 top-0 bg-10 w-16 h-12 md:w-16 md:h-12 rounded-nubrad flex justify-center items-center">
-                    <p class="text-xs text-black text-center font-medium leading-tight">20% Interest</p>
-                </div>
-          </div>
+      
        </div>
 
 
        <!-- options to ask if user likes plan -->
-       <div class="mt-10 md:max-w-xl mx-auto">
+       <div class="mt-10 md:max-w-xl mx-auto plans-recommend">
            <div class="border border-5 p-8 rounded-md bg-white">
                 <p class="text-center text-black font-medium text-base">Do you like these plans?</p>
                 <div class="mt-4 flex justify-center">
@@ -132,6 +98,8 @@
     crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./index.js"></script>
+    <script src="./lib/jquery.cookie.js"></script>
+    <script src="./lib/view_data.js"></script>
+    <script src="./plans.js"></script>
 </body>
 </html>
