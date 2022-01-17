@@ -310,47 +310,47 @@
         "occupation": "Management",
         "plans": [
           {
-              "amount": "50",
+              "amount": "15",
               "interest": "5",
               "plan": "A"
           },
            {
-              "amount": "100",
+              "amount": "30",
               "interest": "10",
               "plan": "B"
           },
            {
-              "amount": "150",
+              "amount": "50",
               "interest": "12",
               "plan": "C"
           },
              {
-              "amount": "200",
+              "amount": "100",
               "interest": "15",
               "plan": "D"
           },
              {
-              "amount": "250",
+              "amount": "150",
               "interest": "12",
               "plan": "E"
           },
              {
-              "amount": "300",
+              "amount": "200",
               "interest": "12",
               "plan": "F"
           },
              {
-              "amount": "350",
+              "amount": "250",
               "interest": "12",
               "plan": "G"
           },
              {
-              "amount": "400",
+              "amount": "300",
               "interest": "12",
               "plan": "H"
           },
              {
-              "amount": "450",
+              "amount": "350",
               "interest": "20",
               "plan": "I"
           }
@@ -412,47 +412,47 @@
         "occupation": "IT Personnel",
         "plans": [
           {
-              "amount": "50",
+              "amount": "15",
               "interest": "5",
               "plan": "A"
           },
            {
-              "amount": "100",
+              "amount": "30",
               "interest": "10",
               "plan": "B"
           },
            {
-              "amount": "150",
+              "amount": "50",
               "interest": "12",
               "plan": "C"
           },
              {
-              "amount": "200",
+              "amount": "100",
               "interest": "15",
               "plan": "D"
           },
              {
-              "amount": "250",
+              "amount": "150",
               "interest": "12",
               "plan": "E"
           },
              {
-              "amount": "300",
+              "amount": "200",
               "interest": "12",
               "plan": "F"
           },
              {
-              "amount": "350",
+              "amount": "250",
               "interest": "12",
               "plan": "G"
           },
              {
-              "amount": "400",
+              "amount": "300",
               "interest": "12",
               "plan": "H"
           },
              {
-              "amount": "450",
+              "amount": "350",
               "interest": "20",
               "plan": "I"
           }
@@ -463,47 +463,47 @@
         "occupation": "Government worker",
        "plans": [
           {
-              "amount": "50",
+              "amount": "15",
               "interest": "5",
               "plan": "A"
           },
            {
-              "amount": "100",
+              "amount": "30",
               "interest": "10",
               "plan": "B"
           },
            {
-              "amount": "150",
+              "amount": "50",
               "interest": "12",
               "plan": "C"
           },
              {
-              "amount": "200",
+              "amount": "100",
               "interest": "15",
               "plan": "D"
           },
              {
-              "amount": "250",
+              "amount": "150",
               "interest": "12",
               "plan": "E"
           },
              {
-              "amount": "300",
+              "amount": "200",
               "interest": "12",
               "plan": "F"
           },
              {
-              "amount": "350",
+              "amount": "250",
               "interest": "12",
               "plan": "G"
           },
              {
-              "amount": "400",
+              "amount": "300",
               "interest": "12",
               "plan": "H"
           },
              {
-              "amount": "450",
+              "amount": "350",
               "interest": "20",
               "plan": "I"
           }
