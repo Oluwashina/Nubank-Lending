@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // get all states api
-  var statesUrl = "http://locationsng-api.herokuapp.com/api/v1/states";
+  var statesUrl = "https://locationsng-api.herokuapp.com/api/v1/states";
   $.ajax({
     url: statesUrl,
     type: "GET",
